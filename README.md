@@ -1,12 +1,12 @@
-# Procedural Economy Simulator
+# File Observer & Security Audit System
 
-A stateful backend simulation engine built with Python, Flask, and APScheduler that models dynamic market fluctuations and real-time state manipulation.
+An automated, background-running system monitoring utility built with Python that tracks high-risk Windows directories, denounces high-frequency events, and securely archives summary reports to cloud storage while sending real-time email alerts.
 
 ## What This Project Shows Off
-- **Asynchronous Background Processing:** Uses `APScheduler` to run non-blocking interval worker ticks that inject random integer shocks into the server state.
-- **Algorithmic State Modeling:** Maintains a persistent server-side market dictionary influenced by supply/demand multipliers, inflation, and volatility.
-- **Interactive Chaos API:** Exposes POST endpoints allowing real-time user interventions (capital injections, resource taxes, market crashes) that immediately alter server-side logic.
-- **Dynamic Real-Time UI:** Features a polling frontend dashboard updating live without page reloads.
+- **Event-Driven File System Monitoring:** Uses the `watchdog` library to observe critical OS directories (`Downloads`, `AppData\Local\Temp`, `Startup`, and `AppData\Roaming`) with top-level scoping (`recursive=False`) to eliminate background noise.
+- **Asynchronous Event Debouncing:** Implements thread-safe collection queues and a countdown timer (`threading.Timer`) to aggregate rapid file bursts into single consolidated batches.
+- **Cloud Automation & Local Privacy:** Intercepts large binaries or executables locally and instead generates structured `.txt` summary logs, uploading them directly to Dropbox via the Dropbox API.
+- **Secure Network Communications:** Handles direct SSL socket connections (`smtplib.SMTP_SSL` on port 465) with custom header sanitization to prevent SMTP injection and newline errors.
 
 ## Requirements
 Look at the requirment.text file to see what is needed!
